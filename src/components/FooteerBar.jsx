@@ -1,7 +1,7 @@
 import { Footer } from "flowbite-react";
 import React from "react";
 import gitHub from "../assets/skills/github.png";
-import LinkedIn from "../assets/skills/linkedin.png";
+import LinkedIn from "../assets/skills/linkedIn.png";
 import Netlify from "../assets/skills/netlify.png";
 function FooteerBar() {
   let currentYear = new Date().getFullYear();
