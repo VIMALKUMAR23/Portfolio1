@@ -3,7 +3,7 @@ import React from "react";
 function About() {
   return (
     <div id="About" className="mx-auto p-5">
-      <p className="text-3xl underline mb-5">About</p>
+      <p className="text-3xl font-bold mb-5">About</p>
 
       <p className=" font-semibold">About Me</p>
 

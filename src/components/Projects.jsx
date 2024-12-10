@@ -4,19 +4,19 @@ import Blog_S from "../assets/projects/MyBlog.png"
 import Random_Quote from "../assets/projects/MyQuotesGenerator.png"
 import todo from "../assets/projects/MyTodo.png"
 import Ekart from "../assets/projects/MyEkart.png"
-
+import { Button } from 'flowbite-react'
 
 function Projects() {
   const projectData=[
-    {name:"Blog Site",pic:Blog_S,description:" MERN based web application ,we can post blog with crud operation and state managed with ReduxToolkit with tailwind css",tools:"React, Express, Node, MongoDB, ReduxToolKit"},
+    {name:"Blog Site",pic:Blog_S,description:" MERN based web application ,we can post blog with crud operation and state managed with ReduxToolkit with tailwind css",tools:"React, Express, Node, MongoDB, ReduxToolKit",link:"https://mern-blog-gray-omega.vercel.app/"},
     // {name:"Fair",pic:blogpic,description:" MERN application with context api and styled using bootstrap ,toastify",tools:" React, Express, Node,MongoDB, Context Api"},
-    {name:"Random Quote Generator",pic:Random_Quote,description:" MERN based web application ,we can post blog with crud operation and state managed with ReduxToolkit with tailwind css",tools:"React, Express, Node, MongoDB, ReduxToolKit"},
-    {name:"To-Do List App",pic:todo,description:" MERN based web application ,we can post blog with crud operation and state managed with ReduxToolkit with tailwind css",tools:"React, Express, Node, MongoDB, ReduxToolKit"},
-    {name:"EKart",pic:Ekart,description:" MERN based web application ,we can post blog with crud operation and state managed with ReduxToolkit with tailwind css",tools:"React, Express, Node, MongoDB, ReduxToolKit"},
+    {name:"Random Quote Generator",pic:Random_Quote,description:" MERN based web application ,we can post blog with crud operation and state managed with ReduxToolkit with tailwind css",tools:"React, Express, Node, MongoDB, ReduxToolKit",link:"https://quote-generator-seven-beta.vercel.app/"},
+    {name:"To-Do List App",pic:todo,description:" MERN based web application ,we can post blog with crud operation and state managed with ReduxToolkit with tailwind css",tools:"React, Express, Node, MongoDB, ReduxToolKit",link:"https://todo-list-redux-toolkit-kappa.vercel.app/"},
+    {name:"EKart",pic:Ekart,description:" MERN based web application ,we can post blog with crud operation and state managed with ReduxToolkit with tailwind css",tools:"React, Express, Node, MongoDB, ReduxToolKit",link:"https://vercel.com/vimals-projects-9d732eae/e-kart"},
   ]
   return (
     <div id='project' >
-      <p className='p-5 text-3xl underline'>Projects</p>
+      <p className='p-5 text-3xl font-bold'>Projects</p>
       
       <div className=' m-5 flex gap-5 max-auto sm:flex-col justify-center items-center md:flex-row'>
 
@@ -33,6 +33,9 @@ function Projects() {
       <p className="font-normal text-black bg-blue-400  ">
         {project.tools}
       </p>
+      <a href={project.link} target="_blank" className='flex justify-center items-center'>
+              <Button gradientDuoTone="pinkToOrange" >Live Demo</Button>
+       </a>
     </Card>
       ))}
     

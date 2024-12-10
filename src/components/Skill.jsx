@@ -15,7 +15,7 @@ function Skill() {
   ];
   return (
     <div className="p-5 mt-3 ">
-      <p className="text-3xl underline mb-5">Skills</p>
+      <p className=" text-3xl font-bold mb-5">Skills</p>
 
       {/* Grid Container */}
       {/* <Card>
