@@ -6,30 +6,34 @@ import TimeLineProject from "./ui/TimeLineProject";
 
 function Home() {
   return (
-    <div className="flex flex-col sm:flex-row mt-10 p-5 min-h-screen ">
-      <div className="flex-1 ">
-        <h2 className=" font-bold font-Alegreya text-3xl">Hello</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 mt-10 p-5 min-h-screen gap-5">
+      {/* Text Section */}
+      <div className="flex flex-col justify-center">
+        <h2 className="font-bold font-Alegreya text-3xl">Hello</h2>
         <p className="text-3xl">
-          I'm <span className=" font-semibold ">Vimal kumar</span>
+          I'm <span className="font-semibold">Vimal Kumar</span>
         </p>
-        <p className="text-3xl">A MERN Stack developer</p>
+        <p className="text-3xl">A MERN Stack Developer</p>
         <p className="pt-5 font-poppins">
           Enthusiastic junior web developer with a strong foundation in
           full-stack development, specializing in the MERN stack (MongoDB,
           Express, React, Node.js). Passionate about creating dynamic web
           applications and continuously improving coding skills. Eager to
-          contribute to innovative projects and collaborate with a talented team
+          contribute to innovative projects and collaborate with a talented
+          team.
         </p>
-        {/* used :- react typed  */}
+        {/* Used React Typed */}
         <ReactAutoType />
 
         <ButtonHire />
-       {/* current project timeLine */}
-       <TimeLineProject/>
+        {/* Current Project Timeline */}
+        <TimeLineProject />
       </div>
-      <div className="flex-1 content-center flex justify-center items-center mt-0 ">
+
+      {/* Image Section */}
+      <div className="flex justify-center items-center">
         <img
-          className=" md:order-last order-first "
+          className="w-[350px] sm:w-[450px] lg:w-[670px]"
           src={image}
           alt="jobSearch image"
         />

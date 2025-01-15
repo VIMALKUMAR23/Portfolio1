@@ -10,9 +10,9 @@ function Projects() {
   const projectData=[
     {name:"Blog Site",pic:Blog_S,description:" MERN based web application ,we can post blog with crud operation and state managed with ReduxToolkit with tailwind css",tools:"React, Express, Node, MongoDB, ReduxToolKit",link:"https://mern-blog-gray-omega.vercel.app/"},
     // {name:"Fair",pic:blogpic,description:" MERN application with context api and styled using bootstrap ,toastify",tools:" React, Express, Node,MongoDB, Context Api"},
-    {name:"Random Quote Generator",pic:Random_Quote,description:" MERN based web application ,we can post blog with crud operation and state managed with ReduxToolkit with tailwind css",tools:"React, Express, Node, MongoDB, ReduxToolKit",link:"https://quote-generator-seven-beta.vercel.app/"},
-    {name:"To-Do List App",pic:todo,description:" MERN based web application ,we can post blog with crud operation and state managed with ReduxToolkit with tailwind css",tools:"React, Express, Node, MongoDB, ReduxToolKit",link:"https://todo-list-redux-toolkit-kappa.vercel.app/"},
-    {name:"EKart",pic:Ekart,description:" MERN based web application ,we can post blog with crud operation and state managed with ReduxToolkit with tailwind css",tools:"React, Express, Node, MongoDB, ReduxToolKit",link:"https://vercel.com/vimals-projects-9d732eae/e-kart"},
+    {name:"Random Quote Generator",pic:Random_Quote,description:" React application, Created an interactive application fetching dynamic quotes via a public API using React hooks like useEffect and useState.",tools:"React, Express, Node, MongoDB, ReduxToolKit",link:"https://quote-generator-seven-beta.vercel.app/"},
+    {name:"To-Do List App",pic:todo,description:" Designed a task management tool using React.js and Redux Toolkit, featuring dynamic CRUD operations and real-time updates.",tools:"React, Express, Node, MongoDB, ReduxToolKit",link:"https://todo-list-redux-toolkit-kappa.vercel.app/"},
+    {name:"EKart",pic:Ekart,description:"Built a MERN-based web application using Redux Toolkit for state management and Bootstrap for responsive UI. Integrated Fakestore API for dynamic product display, with Redux slices managing asynchronous API calls efficiently.",tools:"React, Express, Node, MongoDB, ReduxToolKit",link:"https://e-kart-eta.vercel.app/"},
   ]
   return (
     <div id='project' >
